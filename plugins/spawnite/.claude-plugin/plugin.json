@@ -1,0 +1,21 @@
+{
+    "name": "spawnite",
+    "displayName": "Spawnite Studio",
+    "version": "0.1.0-beta.11",
+    "description": "Build a game on the platform: create it from a template and scaffold behaviours, entities, scenes and panels, playtest it and read the wiki through the Spawnite MCP server, build it step by step with the game-builder skill, and make its models in Blender with the model-builder skill.",
+    "author": {
+        "name": "Spawnite",
+        "url": "https://github.com/spawnite"
+    },
+    "homepage": "https://wiki.spawnite.com/learn/connect-your-agent/",
+    "repository": "https://github.com/spawnite/plugin",
+    "license": "MIT-0",
+    "keywords": [
+        "game",
+        "gamedev",
+        "multiplayer",
+        "threejs",
+        "blender",
+        "3d"
+    ]
+}

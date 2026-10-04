@@ -1,0 +1,35 @@
+{
+    "description": "Hands the agent what the creator sent from a game's devtools chat: when it finishes a turn, when the person types, and after each tool call while it works.",
+    "hooks": {
+        "Stop": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/chat-pending.mjs\" Stop"
+                    }
+                ]
+            }
+        ],
+        "UserPromptSubmit": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/chat-pending.mjs\" UserPromptSubmit"
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/chat-pending.mjs\" PostToolUse"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+    "name": "spawnite",
+    "description": "Spawnite's plugins for building a game with your agent, from the first idea to a game your friends play.",
+    "owner": {
+        "name": "Spawnite",
+        "url": "https://github.com/spawnite"
+    },
+    "plugins": [
+        {
+            "name": "spawnite",
+            "source": "./plugins/spawnite"
+        }
+    ]
+}

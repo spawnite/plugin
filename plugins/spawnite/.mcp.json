@@ -1,0 +1,7 @@
+{
+    "spawnite": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "@spawnite/mcp"]
+    }
+}
