@@ -1,0 +1,28 @@
+{
+    "name": "blender-live",
+    "displayName": "Spawnite Blender Live",
+    "version": "0.1.0-beta.17",
+    "description": "Watch a model take shape in your open Blender: runs Blender Lab's MCP server, which the model-builder skill uses to build the model in a scene of its own.",
+    "author": {
+        "name": "Spawnite",
+        "url": "https://github.com/spawnite"
+    },
+    "homepage": "https://wiki.spawnite.com/learn/blender/#watch-a-model-being-built",
+    "repository": "https://github.com/spawnite/plugin",
+    "license": "MIT-0",
+    "keywords": [
+        "blender",
+        "3d",
+        "mcp"
+    ],
+    "mcpServers": {
+        "blender": {
+            "command": "uvx",
+            "args": [
+                "--from",
+                "git+https://projects.blender.org/lab/blender_mcp.git@v1.0.3#subdirectory=mcp",
+                "blender-mcp"
+            ]
+        }
+    }
+}
