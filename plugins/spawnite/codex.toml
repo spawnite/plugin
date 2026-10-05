@@ -3,7 +3,7 @@
 # .codex/config.toml instead.
 [mcp_servers.spawnite]
 command = "npx"
-args = ["-y", "@spawnite/mcp@0.1.0-beta.17"]
+args = ["-y", "@spawnite/mcp@0.1.0-beta.18"]
 # Codex stops a call after 60 s by default, and a model or a profile runs
 # longer; a sweep past this goes through wait: false and read_run.
 tool_timeout_sec = 600
