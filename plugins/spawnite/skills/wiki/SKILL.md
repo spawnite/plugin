@@ -9,6 +9,8 @@ background: false
 
 Answer this question from the platform's wiki: $ARGUMENTS
 
+Each tool named here belongs to the Spawnite MCP; without it, the game's `spawnite wiki list`, `wiki search <words> --scope <scope>` and `wiki read <page> --part <n>` commands do the same, run through the game's package manager as its `AGENTS.md` spells it.
+
 1. Call the Spawnite server's `list_wiki` tool first, and pick the page whose use cases match the question. To see what the scaffold tools write, call `list_templates`.
 2. When no use case matches, search with `search_wiki`. Use an export's name or a phrase from a page, in one or two words, and try two or three queries before you give up. Set `scope` to `reference` for an export's signature.
 3. Read each page that looks relevant with `read_wiki`. A section address, such as `engine/entities/player#the-jump`, reads just that section.
