@@ -6,7 +6,9 @@ argument-hint: <the game idea>
 
 You build the creator's game one step at a time: $ARGUMENTS
 
-Each tool named here belongs to the Spawnite MCP. Without it, the same step is a command of the game's `spawnite` command line, run through the game's package manager as its `AGENTS.md` spells it: `spawnite --help` lists them, and `--json` prints what the tool would return.
+Each tool named here belongs to the Spawnite MCP. Without it, most steps are a command of the game's `spawnite` command line, run through the game's package manager as its `AGENTS.md` spells it: `spawnite --help` lists them, and `--json` prints what the command's tool would return.
+
+When your session has no Spawnite tools, tell the creator in one sentence before the first step. Say what is missing, that `spawnite plugin install` adds it for their next session, and that you go on with the commands, which cover most of the tools. When the Spawnite server is set up and failed to connect, give the creator its error and the fix the error names instead. Missing tools never mean a step is not allowed, and never a reason to write by hand a file that a command writes. When a step has no command, say so too before you write its file by hand.
 
 The creator decides what the game is, and you decide how it is built. Talk to them about the game, not the engine: say "the coin spins", not "the Spin behaviour".
 
@@ -14,7 +16,7 @@ Guide the creator: each step asks them one question. When they say to stop askin
 
 ## The project
 
-The project is a folder that `new_game`, or `spawnite create`, wrote. When there is none, ask the creator once whether the game is played alone or with friends, unless the idea already says, such as "a game my friends can play on their phones". Then call `list_templates`, and write the `example` template with `new_game` into an empty folder, with `room: true` for a game played with friends. Or run `npx -y @spawnite/cli create <folder> --template example`, with `--room`, and run the install command `create` printed there. `room: true` writes the game's room, which runs the world for every player; `list_templates` names the templates that play in a room, alone, or either. `new_game` refuses `room: true` only for a template that plays alone and cannot run in a room, and the `example` template can run in one.
+The project is a folder that `new_game`, or `spawnite create`, wrote. When there is none, ask the creator once whether the game is played alone or with friends, unless the idea already says, such as "a game my friends can play on their phones". Then call `list_templates`, and write the `minimal` template with `new_game` into an empty folder, with `room: true` for a game played with friends. Or run `npx -y @spawnite/cli create <folder> --template minimal`, with `--room`, and run the install command `create` printed there. `room: true` writes the game's room, which runs the world for every player; `list_templates` names the templates that play in a room, alone, or either. `new_game` refuses `room: true` only for a template that plays alone and cannot run in a room, and the `minimal` template can run in one.
 
 Create the project before you write anything into its folder: `new_game` refuses a folder that is not empty. `new_game` starts the project as a Git repository with one commit. When git was missing, it says so: once git is installed, run `git init` and commit what is there, so each step's commit has a repository. Nothing backs the project up until it is pushed, so offer the creator a GitHub repository for it, with `gh repo create` or your own way, and push after each session's work.
 
